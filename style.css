@@ -8,14 +8,17 @@ h1 {
 
 #grid {
     margin: auto;
-    display: flex;
-    flex: auto; 
-    width: 500px;
-    height: 500px;
-    flex-wrap: wrap;
+    border: 1px solid blue;
+    display: grid;
+    /*flex: auto;*/ 
+    width: 960px;
+    height: 960px;
+    /*flex-wrap: wrap;
     justify-content: stretch;
-    align-content: stretch;
+    align-content: stretch;*/
 }
 
 .square {
+    background-color: white;
+    border: 1px solid black;
 }
