@@ -17,6 +17,12 @@ click.onclick = function() {
     const grid = document.getElementById('grid'); 
     grid.replaceChildren();
     let getNo = prompt("choose a number of side blocks up to a 100", "");
+        if (getNo>100) {
+            alert("Choose again, remember to keep it under 100!")
+            return
+        }
+    document.getElementById("btn");
+    btn.style.backgroundColor = `#${(Math.random()*0xFFFFFF<<0).toString(16)}`;
     console.log(getNo);
     gridIt(getNo);
 }
@@ -37,7 +43,11 @@ function colorIt () {
 const squares = document.getElementsByClassName('square'); 
     for (let i=0; i<squares.length; i++) { //function allowing coloring of the elements on the mouseover
         squares[i].addEventListener('mouseover', () => {
-            squares[i].style.backgroundColor = 'black';
+            squares[i].style.backgroundColor = `#${(Math.random()*0xFFFFFF<<0).toString(16)}`;
         });
     };
+};
+
+let randomColor = function()  {
+    let color = `#${(Math.random()*0xFFFFFF<<0).toString(16)}`
 };
