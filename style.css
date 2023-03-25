@@ -1,13 +1,38 @@
 body {
-    background-image: radial-gradient(rgb(235, 116, 116), rgb(230, 188, 112), rgb(238, 238, 116), rgb(96, 192, 96),  rgb(115, 115, 212), rgb(146, 98, 146));
+    background-image: url('background.jpg');
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+@font-face {
+    font-family: 'Perfograma';
+    src: url('Perfograma.otf');
+}
+
+@font-face {
+    font-family: 'Paraaminobenzoic';
+    src: url('paraaminobenzoic.otf');
+}
+
 h1 {
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 0px;
+    border-radius: 5px;
     font-size: 75px;
     text-align: center;
-    
-    text-shadow: 1px 3px white;
+    font-family: 'Perfograma';
+    text-shadow: 1px 3px lightblue;
+    background-color: rgba(255, 235, 205, 0.8);
+}
+
+h3 {
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Perfograma';
+    text-shadow: 1px 3px lightblue;
+    background-color: rgba(255, 235, 205, 0.8);
 }
 
 #top {
@@ -17,16 +42,40 @@ h1 {
     margin: 60px;
 }
 
-#btn {
-    font-size: 50px;
-    width: 500px;
+#buttons {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 60px;
+}
 
+.btn {
+    font-family:'Paraaminobenzoic'; 
+    font-weight: bolder;
+    font-size: 40px;
+    color: whitesmoke;
+    width: 240px;
+    height: 120px;
+    border-radius: 10%;
+    background-color: rgb(157, 186, 222);
+    filter: drop-shadow(10px 10px 0px  rgb(116, 116, 231));
+    border: 10px groove rgb(116, 116, 231);
+}
+
+button:active {
+    transform: scale(0.95);
+    filter: drop-shadow(7px 7px 0px rgb(116, 116, 231));
 }
 
 #grid {
     cursor: crosshair;
     margin: auto;
-    border: 1px solid blue;
+    background-color: rgb(157, 186, 222);
+    border: 10px solid rgb(116, 116, 231);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5%;
     display: grid;
     /*flex: auto;*/ 
     width: 960px;
@@ -38,5 +87,15 @@ h1 {
 
 .square {
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid lightgray;
+    filter: brightness(100%);
 }
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
