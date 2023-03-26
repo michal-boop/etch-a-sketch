@@ -51,6 +51,7 @@ h3 {
 }
 
 .btn {
+    flex: 50%;
     font-family:'Paraaminobenzoic'; 
     font-weight: bolder;
     font-size: 40px;
@@ -68,7 +69,14 @@ button:active {
     filter: drop-shadow(7px 7px 0px rgb(116, 116, 231));
 }
 
+#container {
+    display: flex;
+    flex: auto;
+}
+
 #grid {
+    flex: 50%;
+    display: flex;
     cursor: crosshair;
     margin: auto;
     background-color: rgb(157, 186, 222);
@@ -77,15 +85,12 @@ button:active {
     margin-bottom: 10px;
     border-radius: 5%;
     display: grid;
-    /*flex: auto;*/ 
     width: 960px;
     height: 960px;
-    /*flex-wrap: wrap;
-    justify-content: stretch;
-    align-content: stretch;*/
 }
 
 .square {
+    flex: auto;
     background-color: white;
     border: 1px solid lightgray;
     filter: brightness(100%);
