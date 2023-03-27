@@ -47,12 +47,14 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
     flex-wrap: wrap;
     margin: 60px;
+    max-width: 960px;
 }
 
 .btn {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     font-family:'Paraaminobenzoic'; 
     font-weight: bolder;
     font-size: 40px;
@@ -63,6 +65,7 @@ h3 {
     background-color: rgb(157, 186, 222);
     filter: drop-shadow(10px 10px 0px  rgb(116, 116, 231));
     border: 10px groove rgb(116, 116, 231);
+    margin: 0 auto;
 }
 
 button:hover {
