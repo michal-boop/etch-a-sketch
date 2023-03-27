@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-    padding: 12px 20px 15px 20px;
+    padding: 10px 20px 15px 20px;
     margin-bottom: 0px;
     border-radius: 5px;
     font-size: 75px;
@@ -25,7 +25,7 @@ h1 {
 }
 
 h3 {
-    padding: 12px 20px 15px 20px;
+    padding: 10px 20px 15px 20px;
     margin-bottom: 10px;
     border-radius: 5px;
     font-size: 35px;
@@ -39,11 +39,11 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 60px;
+    margin: 30px 60px;
 }
 
 #buttons {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -65,21 +65,27 @@ h3 {
     border: 10px groove rgb(116, 116, 231);
 }
 
+button:hover {
+    background-color: rgb(135, 158, 186);
+    cursor: pointer;
+}
+
 button:active {
     transform: scale(0.95);
     filter: drop-shadow(7px 7px 0px rgb(116, 116, 231));
 }
 
 #container {
-    width: 90%;
+    width: 80%;
     height: auto;
     min-width: 480px;
     min-height: 480px;
+    margin: 0 auto;
     display: flex;
 }
 
 #grid {
-    flex: 1 1 0;
+    flex: 0 1 auto;
     cursor: crosshair;
     margin: auto;
     background-color: rgb(157, 186, 222);
